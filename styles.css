@@ -26,23 +26,23 @@ body {
     z-index: 2;
   }
 
-  #menu[data-active-index="0"] > #menu-background-pattern {
+  #menu[data-active-index="0"] > #background-pattern {
     background-position: 0% -25%;
   }
   
-  #menu[data-active-index="1"] > #menu-background-pattern {
+  #menu[data-active-index="1"] > #background-pattern {
     background-position: 0% -50%;
   }
   
-  #menu[data-active-index="2"] > #menu-background-pattern {
+  #menu[data-active-index="2"] > #background-pattern {
     background-position: 0% -75%;
   }
   
-  #menu[data-active-index="3"] > #menu-background-pattern {
+  #menu[data-active-index="3"] > #background-pattern {
     background-position: 0% -100%;
   }
 
-  #menu-background-pattern {
+  #background-pattern {
     background-image: radial-gradient(
       rgba(255, 255, 255, 0.1) 9%, 
       transparent 9%
@@ -60,7 +60,7 @@ body {
     z-index: 1;
   }
   
-  #menu-items:hover ~ #menu-background-pattern {
+  #menu-items:hover ~ #background-pattern {
     background-size: 11vmin 11vmin;
     opacity: 0.5;
   }
@@ -94,4 +94,32 @@ body {
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
     transition: opacity 400ms ease;
+  }
+
+  #home-button-shell {  
+    margin-right: clamp(2rem, 4vw, 24rem);
+    position: relative;
+    text-align: right;
+    z-index: 2;
+  }
+
+  .home-button {  
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    text-decoration: none;
+    transition: opacity 400ms ease;
+    opacity: 0.45;
+  }
+  
+  .home-button:hover {
+    opacity: 1; 
+  }
+
+  #home-button-shell:hover + #background-pattern{
+    background-size: 11vmin 11vmin;
+    background-position: 0% -25%;
   }
