@@ -1,0 +1,69 @@
+/* This is an example of an external CSS file */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-top: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #006699;
+}
+
+a:hover {
+    color: #333333;
+}
+
+/* About section styles */
+#about {
+    margin-top: 50px;
+}
+
+#about p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Projects section styles */
+#projects {
+    margin-top: 50px;
+}
+
+#projects ul {
+    text-align: center;
+}
+
+#projects li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contact section styles */
+#contact {
+    text-align: left;
+}
+#contact ul {
+    display:inline-block;
+    margin-top:50px;
+}
