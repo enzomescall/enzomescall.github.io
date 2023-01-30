@@ -1,69 +1,81 @@
-/* This is an example of an external CSS file */
-
-/* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-h1 {
-    text-align: center;
-    color: #333333;
-    margin-top: 50px;
-}
-
-nav ul {
+    background-color: rgb(20, 20, 20);
+    margin: 0px;
+  }
+  
+  #menu {  
+    align-items: center;
     display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 25px;
-}
+    height: 100vh;
+    width: 100vw;
+  }
 
-nav li {
-    margin-right: 1em;
-}
-
-a {
+  .no-link{
+    color: white;
     text-decoration: none;
-    color: #006699;
-}
+  } 
+  
+  #menu-items {
+    margin-left: clamp(4rem, 20vw, 48rem);
+    position: relative;
+    z-index: 2;
+  }
+  
+  #menu[data-active-index="0"] > #menu-background-pattern {
+    background-position: 0% -25%;
+  }
+  
+  #menu[data-active-index="1"] > #menu-background-pattern {
+    background-position: 0% -50%;
+  }
+  
+  #menu[data-active-index="2"] > #menu-background-pattern {
+    background-position: 0% -75%;
+  }
+  
+  #menu[data-active-index="3"] > #menu-background-pattern {
+    background-position: 0% -100%;
+  }
 
-a:hover {
-    color: #333333;
-}
+  #menu-background-pattern {
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 9%, 
+      transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    height: 100vh;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease, 
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100vw;
+    z-index: 1;
+  }
+  
+  #menu-items:hover ~ #menu-background-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+  }
 
-/* About section styles */
-#about {
-    margin-top: 50px;
-}
-
-#about p {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.5;
-    width: 60%;
-    margin: 0 auto;
-}
-
-/* Projects section styles */
-#projects {
-    margin-top: 50px;
-}
-
-#projects ul {
-    text-align: center;
-}
-
-#projects li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Contact section styles */
-#contact {
-    text-align: left;
-}
-#contact ul {
-    display:inline-block;
-    margin-top:50px;
-}
+  
+  #menu-items:hover > .menu-item {
+    opacity: 0.3;
+  }
+  
+  #menu-items:hover > .menu-item:hover {
+    opacity: 1; 
+  }
+  
+  .menu-item {
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(3rem, 8vw, 8rem);
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    text-decoration: none;
+    transition: opacity 400ms ease;
+  }
