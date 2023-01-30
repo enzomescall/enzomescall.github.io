@@ -10,9 +10,10 @@ return (
 		height: '100vh'
 	}}
 	>
-	<h1>GeeksforGeeks is a Computer Science portal for geeks.</h1>
+	<h1>I am a compsci-stats major.</h1>
 	</div>
 );
 };
 
 export default About;
+
