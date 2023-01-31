@@ -95,6 +95,23 @@ h3 {
     z-index: 0;
 }
 
+#about-background-image {
+    background-image: url("./images/boston-museum.JPG");
+    background-position: center 40%;
+    background-size: 105vmax;
+    height: 100%;
+    left: 0px;
+    opacity: 0.15;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease,
+        background-size 800ms ease,
+        background-position 800ms ease;
+    width: 100%;
+    z-index: 0;
+}
+
+
 #menu-items:hover~#background-pattern {
     background-size: 11vmin 11vmin;
     opacity: 0.5;
@@ -158,7 +175,12 @@ h3 {
     opacity: 1;
 }
 
-#home-button-shell:hover+#background-pattern {
+#home-button-shell:hover ~ #background-pattern {
     background-size: 11vmin 11vmin;
     background-position: 0% -25%;
+}
+
+#home-button-shell:hover ~ #about-background-image {
+    background-size: 100vmax;
+    opacity: 0.1;
 }
