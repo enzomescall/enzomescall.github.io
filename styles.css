@@ -76,6 +76,7 @@ h3 {
         background-size 800ms ease,
         background-position 800ms ease;
     width: 100vw;
+    pointer-events: none;
     z-index: 1;
 }
 
@@ -108,9 +109,26 @@ h3 {
         background-size 800ms ease,
         background-position 800ms ease;
     width: 100%;
+    pointer-events: none;
     z-index: 0;
 }
 
+#projects-background-image {
+    background-image: url("./images/rio-landscape.jpg");
+    background-position: center 40%;
+    background-size: 105vmax;
+    height: 100%;
+    left: 0px;
+    opacity: 0.15;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease,
+        background-size 800ms ease,
+        background-position 800ms ease;
+    width: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
 
 #menu-items:hover~#background-pattern {
     background-size: 11vmin 11vmin;
@@ -183,4 +201,14 @@ h3 {
 #home-button-shell:hover ~ #about-background-image {
     background-size: 100vmax;
     opacity: 0.1;
+}
+
+#projects {
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+    z-index: 2;
 }
