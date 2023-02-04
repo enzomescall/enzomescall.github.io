@@ -11,6 +11,14 @@ p, h1, h2, h3, a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none
+}
+
+#github-link {
+    color: lightblue
+}
+
 #menu {
     align-items: center;
     display: flex;
@@ -189,16 +197,6 @@ p, h1, h2, h3, a {
     opacity: 1;
 }
 
-#button-shell:hover ~ #background-pattern {
-    background-size: 11vmin 11vmin;
-    background-position: 0% -25%;
-}
-
-#button-shell:hover ~ #about-background-image {
-    background-size: 100vmax;
-    opacity: 0.1;
-}
-
 /* Projects page */
 
 .hline {
@@ -210,8 +208,29 @@ p, h1, h2, h3, a {
 
 #projects {
     display: flex;
-    width: 100%;
+    width: 95%;
+    margin-top: 5vw;
+    margin-left: 5vws;
+    overflow: auto;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 5vw;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    animation:pseudoscroll;
+    animation-duration: 12.5s;
     z-index: 2;
+}
+
+@keyframes pseudoscroll {
+        0%   {padding-left: 10vw;}
+        20%  {padding-left: 10vw;}
+        100% {padding-left: 5vw;}
+    }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#projects::-webkit-scrollbar {
+    display: none;
 }
 
 .project {

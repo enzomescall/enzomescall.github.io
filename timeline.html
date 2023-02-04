@@ -6,35 +6,84 @@
     </head>
 
     <div id="button-shell">
-        <li class="button"><span onclick="transitionToPage('index.html')">Home</span></li></li>
-    </div>
+        <li class="button" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+            <span onclick="transitionToPage('index.html')">Home</span>
+        </li>
+    </div>    
 
-    <section id="projects">
-        <div class="project">
-            <div id="button-shell">
-                <li class="button"><span onclick="transitionToPage('https://github.com/MoneyBorgs/Borgs')">MoneyBorgs</span></li></li>
-            </div>
-            <div id="project-image">
-                <img src="./images/moneyborgs.png" alt="MoneyBorgs Image" onclick="transitionToPage('https://github.com/MoneyBorgs/Borgs')">
-            </div>
-            <p>Personal finance management website built with React, Node.js, and PostgreSQL.</p>
-            <h3> Aug. 2022 to Dec. 2022 </h1>
-        </div>
-        <div class="project">
-            <div id="button-shell">
-                <li class="button"><span onclick="transitionToPage('https://github.com/MoneyBorgs/Borgs')">Project</span></li></li>
-            </div>
-            <div id="project-image">
-                <img src="" alt="Image">
-            </div>
-            <p>Placeholder text.</p>
-            <h3> Dates </h1>
-        </div>
-    </section>
+    <div id="background-pattern"></div>  
+    <div id="projects-background-image"></div>
 
     <main>
-        <div class="hline"></div>
-    </main>
+        <section id="projects">
+            <div class="project">
+                <div id="button-shell">
+                    <li class="button" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/MoneyBorgs/Borgs">MoneyBorgs</a>
+                    </li>
+                </div>
+                <div id="project-image" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+                    <img src="./images/moneyborgs.png" alt="MoneyBorgs Image" onclick="transitionToPage('https://github.com/MoneyBorgs/Borgs')">
+                </div>
+                <p>Personal finance management website built with React, Node.js, and PostgreSQL.</p>
+                <li><a id="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/MoneyBorgs/Borgs">Github link</a></li>
+                <h3> Aug. 2022 to Dec. 2022 </h1>
+            </div>
 
+            <div class="project">
+                <div id="button-shell">
+                    <li class="button" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+                        <a target="_blank" rel="noopener noreferrer" href="">Project</a>
+                    </li>
+                </div>
+                <div id="project-image" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+                    <img src="" alt="Image" onclick="transitionToPage('')">
+                </div>
+                <p>Placeholder text.</p>
+                <li><a id="github-link" target="_blank" rel="noopener noreferrer" href="">Github link</a></li>
+                <h3> Dates </h1>
+            </div>
+
+            <div class="project">
+                <div id="button-shell">
+                    <li class="button" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+                        <a target="_blank" rel="noopener noreferrer" href="">Project</a>
+                    </li>
+                </div>
+                <div id="project-image" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+                    <img src="" alt="Image">
+                </div>
+                <p>Placeholder text.</p>
+                <h3> Dates </h1>
+            </div>
+
+            <div class="project">
+                <div id="button-shell">
+                    <li class="button">
+                        <a target="_blank" rel="noopener noreferrer" href="">Project</a>
+                    </li>
+                </div>
+                <div id="project-image" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+                    <img src="" alt="Image">
+                </div>
+                <p>Placeholder text.</p>
+                <h3> Dates </h1>
+            </div>
+
+            <div class="project">
+                <div id="button-shell">
+                    <li class="button">
+                        <a target="_blank" rel="noopener noreferrer" href="">Project</a>
+                    </li>
+                </div>
+                <div id="project-image" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+                    <img src="" alt="Image">
+                </div>
+                <p>Placeholder text.</p>
+                <h3> Dates </h1>
+            </div>
+        </section>
+    </main>
+    
 </html>
 <script src="app.js"></script> 
