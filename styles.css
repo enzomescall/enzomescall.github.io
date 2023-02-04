@@ -6,11 +6,9 @@ body {
     transition: opacity 200ms;
 }
 
-p,
-h1,
-h2,
-h3 {
+p, h1, h2, h3, a {
     color: white;
+    text-decoration: none;
 }
 
 #menu {
@@ -18,11 +16,6 @@ h3 {
     display: flex;
     height: 100vh;
     width: 100vw;
-}
-
-.no-link {
-    color: white;
-    text-decoration: none;
 }
 
 #menu-items {
@@ -83,7 +76,8 @@ h3 {
 #menu-background-image {
     background-image: url("https://www.cappex.com/sites/default/files/styles/college_hero_desktop/public/images/hero/college/198419_hero.jpg?itok=aP5sNO_T");
     background-position: center 40%;
-    background-size: 110vmax;
+    background-size: 105vmax;
+    background-repeat: no-repeat;
     height: 100%;
     left: 0px;
     opacity: 0.15;
@@ -100,6 +94,7 @@ h3 {
     background-image: url("./images/rio-landscape.jpg");
     background-position: center 40%;
     background-size: 105vmax;
+    background-repeat: no-repeat;
     height: 100%;
     left: 0px;
     opacity: 0.15;
@@ -117,6 +112,7 @@ h3 {
     background-image: url("./images/rio-landscape.jpg");
     background-position: center 40%;
     background-size: 105vmax;
+    background-repeat: no-repeat;
     height: 100%;
     left: 0px;
     opacity: 0.15;
@@ -170,14 +166,14 @@ h3 {
     transition: opacity 400ms ease;
 }
 
-#home-button-shell {
+#button-shell {
     margin-right: clamp(2rem, 4vw, 24rem);
     position: relative;
     text-align: right;
     z-index: 2;
 }
 
-.home-button {
+.button {
     color: white;
     cursor: pointer;
     display: block;
@@ -189,26 +185,56 @@ h3 {
     opacity: 0.45;
 }
 
-.home-button:hover {
+.button:hover {
     opacity: 1;
 }
 
-#home-button-shell:hover ~ #background-pattern {
+#button-shell:hover ~ #background-pattern {
     background-size: 11vmin 11vmin;
     background-position: 0% -25%;
 }
 
-#home-button-shell:hover ~ #about-background-image {
+#button-shell:hover ~ #about-background-image {
     background-size: 100vmax;
     opacity: 0.1;
 }
 
+/* Projects page */
+
+.hline {
+    background-color: white;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
 #projects {
-    align-items: right;
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    width: 100vw;
+    width: 100%;
     z-index: 2;
+}
+
+.project {
+    padding: 3rem 2rem;
+    justify-content: center;
+    border-left: thick solid white;
+    margin: 0px 0px 0px 0px;
+    padding: 0px clamp(5rem, 10vw, 30rem) 0px 2rem;
+}
+
+.project > p {
+    font-size: 1.25rem;
+    line-height: 1.5;   
+    max-width: 400px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#project-image > img {
+    height: 12vw;
+    width: 19vw;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
 }
