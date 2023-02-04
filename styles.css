@@ -186,7 +186,7 @@ li {
     cursor: pointer;
     display: block;
     font-family: 'Ibarra Real Nova', serif;
-    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-size: clamp(0.5rem, 4vw, 4rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
     transition: opacity 400ms ease;
@@ -209,10 +209,10 @@ li {
 #projects {
     display: flex;
     width: 95%;
-    margin-top: 5vw;
+    margin-top: 3vw;
     margin-left: 5vws;
     overflow: auto;
-    padding-top: 5vw;
+    padding-top: 3vw;
     padding-bottom: 5vw;
     padding-left: 5vw;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -223,9 +223,9 @@ li {
 }
 
 @keyframes pseudoscroll {
-        0%   {padding-left: 10vw;}
-        20%  {padding-left: 10vw;}
-        100% {padding-left: 5vw;}
+        0%   {padding-left: 10vw; width: 90%;}
+        20%  {padding-left: 10vw; width: 90%;}
+        100% {padding-left: 5vw; width: 95%;}
     }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -238,7 +238,7 @@ li {
     justify-content: center;
     border-left: thick solid white;
     margin: 0px 0px 0px 0px;
-    padding: 0px clamp(5rem, 10vw, 30rem) 0px 2rem;
+    padding: 0px clamp(5rem, 5vw, 30rem) 0px 2rem;
 }
 
 .project > p {
@@ -254,6 +254,32 @@ li {
     width: 19vw;
     object-fit: cover;
     border-radius: 10px;
+    background-color: white;
     display: flex;
     cursor: pointer;
+}
+
+#project-button-shell {
+    margin-right: clamp(2rem, 4vw, 24rem);
+    width: 100%;
+    position: relative;
+    text-align: justify;
+    z-index: 2;
+}
+
+.project-button {
+    color: white;
+    cursor: pointer;
+    display: block;
+    white-space: nowrap;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(0.5rem, 4vw, 4rem);
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    text-decoration: none;
+    transition: opacity 400ms ease;
+    opacity: 0.45;
+}
+
+.project-button:hover {
+    opacity: 1;
 }
