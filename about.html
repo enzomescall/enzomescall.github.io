@@ -7,15 +7,25 @@
   </head>
   <body>
     <div id="button-shell">
-      <li class="button"><span onclick="transitionToPage('index.html')">Home</span></li></li>
+      <li class="button" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+        <span onclick="transitionToPage('index.html')">Home</span>
+      </li>
     </div>
-    <div id="background-pattern"></div>  
-    <div id="about-background-image"></div>
+
+    <div id="background-pattern"></div> 
+
+    <div id="image-reel">
+      <!--img src="./images/linkedin.jpeg" alt="Picture of Enzo" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+      <img src="./images/yellow-hospital.jpg" alt="Picture of Enzo" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+      <img src="./images/boston-brunch.JPG" alt="Picture of Enzo" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+      <img src="./images/cherry-boston-smile.jpg" alt="Picture of Enzo" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()"!-->
+    </div>
+
     <section id="about">
-      <img src="your-image-source.jpg" alt="Picture of Enzo" id="profile-picture">
-      <h1>Hey, I'm Enzo Mescall</h1>
-      <p>a Brazilian computer scientist and statistician from Duke University. </p>
+      <h1>Hey, I'm Enzo Mescall...</h1>
+      <p>...a Brazilian computer scientist and statistician from Duke University. </p>
     </section>
+
     <section id="contact">
       <p>You can contact me through the following ways:</p>
       <ul>
@@ -25,6 +35,7 @@
           <li>GitHub: <a href="https://github.com/enzomescall">enzomescall</a></li>
       </ul>
     </section>
+
   </body>
 </html>
 <script src="app.js"></script> 

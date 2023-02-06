@@ -201,7 +201,41 @@ li {
     opacity: 1;
 }
 
-/* Projects page */
+/* 
+====================
+    About page
+====================
+*/
+
+#image-reel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    size: clamp(200px, 90%, 1000px);
+    margin-top: 2%;
+    user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-reel > img {
+width: 35vmin;
+height: 35vmin;
+object-fit: cover;
+object-position: 100% center;
+}
+
+#about {
+    margin: 5% 5% 5% 5%;
+}
+
+#contact {
+    margin: 5% 5% 5% 5%;
+}
+
+/* 
+====================
+    Projects page
+====================
+*/
 
 .hline {
     background-color: white;
@@ -223,18 +257,18 @@ li {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     animation:pseudoscroll;
-    animation-duration: 12.5s;
-    animation-iteration-count: 2;
+    animation-duration: 25s;
     z-index: 2;
 }
 
 @keyframes pseudoscroll {
         0%   {padding-left: 10vw; width: 90%;}
-        10%  {padding-left: 10vw; width: 90%;}
+        5%  {padding-left: 10vw; width: 90%;}
+        35% {padding-left: 5vw; width: 95%;}
         40% {padding-left: 5vw; width: 95%;}
-        45% {padding-left: 5vw; width: 95%;}
-        95%  {padding-left: 10vw; width: 90%;}
-        100%  {padding-left: 10vw; width: 90%;}
+        70%   {padding-left: 10vw; width: 90%;}
+        75%  {padding-left: 10vw; width: 90%;}
+        100%  {padding-left: 5vw; width: 95%;}
     }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
