@@ -20,7 +20,7 @@ li {
 }
 
 #no-link {
-    color: red
+    color: #91ad66
 }
 
 #menu {
@@ -300,4 +300,19 @@ li {
     margin-top: 1rem;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.slide-button {
+    cursor: pointer;
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(5px, 105%, 40px);
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    text-decoration: none;
+    transition: opacity 400ms ease;
+    opacity: 0.45;
+}
+
+.slide-button:hover {
+    opacity: 1;
 }

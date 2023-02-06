@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 })
 
 const background_pattern = document.getElementById('background-pattern');
-const background_image = document.getElementById('projects-background-image');
+//const background_image = document.getElementById('projects-background-image');
 
 window.addEventListener('mousemove', mouseCoordinates);
 
