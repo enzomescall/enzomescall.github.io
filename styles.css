@@ -19,6 +19,10 @@ li {
     color: lightblue
 }
 
+#no-link {
+    color: red
+}
+
 #menu {
     align-items: center;
     display: flex;

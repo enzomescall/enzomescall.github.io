@@ -27,7 +27,6 @@ const background_image = document.getElementById('projects-background-image');
 window.addEventListener('mousemove', mouseCoordinates);
 
 let background_coords = "background-position: 0% 0%;";
-
 function mouseCoordinates(event){
   let x = event.clientX.toString()/window.innerWidth * 100 | 0;
   let y = event.clientY.toString()/window.innerHeight * 100 | 0;
