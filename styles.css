@@ -219,6 +219,7 @@ li {
     padding-top: 3vw;
     padding-bottom: 5vw;
     padding-left: 5vw;
+    scroll-behavior: smooth;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     animation:pseudoscroll;
@@ -290,4 +291,13 @@ li {
 
 .project-button:hover {
     opacity: 1;
+}
+
+#button-track {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }

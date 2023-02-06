@@ -38,8 +38,8 @@ function alterBackground() {
   background_pattern.style.opacity = "0.5";
   background_pattern.style.backgroundSize = "11vmin 11vmin";
 
-  background_image.style.backgroundSize = "100vmax";
-  background_image.style.opacity = "0.1";
+  //background_image.style.backgroundSize = "100vmax";
+  //background_image.style.opacity = "0.1";
 }
 
 function revertBackground() {
@@ -47,6 +47,18 @@ function revertBackground() {
   background_pattern.style.backgroundPosition = "0% 0%;"
   background_pattern.style.opacity = "1";
 
-  background_image.style.backgroundSize = "105vmax";
-  background_image.style.opacity = "0.15";
+  //background_image.style.backgroundSize = "105vmax";
+  //background_image.style.opacity = "0.15";
 }
+
+// scrolling functionality in timeline
+
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+  document.getElementById('projects').scrollLeft += 800;
+};
+buttonLeft.onclick = function () {
+  document.getElementById('projects').scrollLeft -= 800;
+};
