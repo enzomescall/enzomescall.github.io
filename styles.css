@@ -219,13 +219,17 @@ li {
     scrollbar-width: none;  /* Firefox */
     animation:pseudoscroll;
     animation-duration: 12.5s;
+    animation-iteration-count: 2;
     z-index: 2;
 }
 
 @keyframes pseudoscroll {
         0%   {padding-left: 10vw; width: 90%;}
-        20%  {padding-left: 10vw; width: 90%;}
-        100% {padding-left: 5vw; width: 95%;}
+        10%  {padding-left: 10vw; width: 90%;}
+        40% {padding-left: 5vw; width: 95%;}
+        45% {padding-left: 5vw; width: 95%;}
+        95%  {padding-left: 10vw; width: 90%;}
+        100%  {padding-left: 10vw; width: 90%;}
     }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -244,7 +248,7 @@ li {
 .project > p {
     font-size: 1.25rem;
     line-height: 1.5;   
-    max-width: 400px;
+    max-width: clamp(400px, 90%, 800px);
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }

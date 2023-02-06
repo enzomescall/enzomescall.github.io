@@ -12,6 +12,9 @@ window.transitionToPage = function(href) {
     setTimeout(function() { 
         window.location.href = href
     }, 200)
+    setTimeout(function() { 
+      document.querySelector('body').style.opacity = 1
+    }, 500)  
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
@@ -48,4 +51,3 @@ function revertBackground() {
   background_image.style.backgroundSize = "105vmax";
   background_image.style.opacity = "0.15";
 }
-
