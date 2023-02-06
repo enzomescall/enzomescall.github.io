@@ -302,6 +302,16 @@ object-position: 100% center;
     cursor: pointer;
 }
 
+#project-image > a > img {
+    height: 12vw;
+    width: 19vw;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    cursor: pointer;
+}
+
 #project-button-shell {
     margin-right: clamp(2rem, 4vw, 24rem);
     width: 100%;
