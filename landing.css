@@ -1,7 +1,31 @@
 body {
-    background-color: rgb(20, 20, 20);
-    margin: 0px;
-    color: white;
-    opacity: 0;
-    transition: opacity 200ms;
+    background-color: #000000; /* sets the background color of the page to white */
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+    height: 90vh;
+    width: 90vw;
+    margin: 5vh 5vw;
+  }
+  
+
+  
+
+.tile {
+    background-color: #ffb7fb;
+}
+
+.tile:hover {
+    opacity: 0.5;
 }
