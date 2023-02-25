@@ -225,6 +225,7 @@ object-position: 100% center;
 
 #about {
     margin: 5% 5% 5% 5%;
+    margin-right: clamp(200px, 40vw, 900px)
 }
 
 #contact {
