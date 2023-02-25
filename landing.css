@@ -7,8 +7,17 @@ html, body {
     margin: 0;
     overflow: hidden;
 }
-  
-  .grid-container {
+
+li {
+    list-style-type: none
+}
+
+p, h1, h2, h3, a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -17,13 +26,17 @@ html, body {
     height: 90vh;
     width: 90vw;
     margin: 5vh 5vw;
-  }
-  
-
-  
+}
 
 .tile {
-    background-color: #ffb7fb;
+    background-color: #d69db8;
+    padding: 20px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tile:hover {
