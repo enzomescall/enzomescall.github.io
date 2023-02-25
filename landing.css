@@ -13,7 +13,7 @@ li {
 }
 
 p, h1, h2, h3, a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -21,19 +21,18 @@ p, h1, h2, h3, a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 5%;
-    grid-column-gap: 5%;
-    height: 90vh;
-    width: 90vw;
-    margin: 5vh 5vw;
+    grid-row-gap: 2vh;
+    grid-column-gap: 2vw;
+    height: 95vh;
+    width: 95vw;
+    margin: 3vh 3vw;
 }
 
 .tile {
     background-color: #d69db8;
-    padding: 20px;
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2em;
+    font-size: 6vw; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,4 +40,12 @@ p, h1, h2, h3, a {
 
 .tile:hover {
     opacity: 0.5;
+}
+
+.tile:hover > a {
+    color:rgb(194, 53, 83)
+}
+
+.tile:hover > li > a{
+    color:rgb(80, 161, 73)
 }
