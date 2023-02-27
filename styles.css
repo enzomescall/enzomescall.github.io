@@ -211,8 +211,8 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    size: clamp(200px, 90%, 1000px);
-    margin-top: 2%;
+    size: 90%;
+    margin: 5% 2%;
     user-select: none; /* -- Prevent image highlighting -- */
 }
 
