@@ -1,6 +1,6 @@
 body {
     background-color: #000000; /* sets the background color of the page to white */
-  }
+}
 
 html, body {
     height: 100%;
@@ -26,6 +26,7 @@ p, h1, h2, h3, a {
     height: 95vh;
     width: 95vw;
     margin: 3vh 3vw;
+    z-index: 1;
 }
 
 .tile {
