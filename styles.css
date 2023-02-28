@@ -248,6 +248,7 @@ object-position: 100% center;
     display: flex;
     width: 95%;
     margin-top: 3vw;
+    height: auto;
     margin-left: 5vws;
     overflow: auto;
     padding-top: 3vw;
