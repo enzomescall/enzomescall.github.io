@@ -169,7 +169,6 @@ li {
 
 .menu-name {
     color: white;
-    cursor: pointer;
     display: block;
     font-family: 'Ibarra Real Nova', serif;
     font-size: clamp(2rem, 4vw, 4rem);
@@ -212,7 +211,7 @@ li {
     flex-direction: row;
     justify-content: space-around;
     size: 90%;
-    margin: 5% 2%;
+    margin: 5% 0% 5% 0%;
     user-select: none; /* -- Prevent image highlighting -- */
 }
 
