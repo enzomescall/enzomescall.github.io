@@ -211,13 +211,13 @@ li {
     flex-direction: row;
     justify-content: space-around;
     size: 90%;
-    margin: 5% 0% 5% 0%;
+    margin-top: 2.5%;
     user-select: none; /* -- Prevent image highlighting -- */
 }
 
 #image-reel > img {
-width: 35vmin;
-height: 35vmin;
+width: 20vw;
+height: 20vw;
 object-fit: cover;
 object-position: 100% center;
 }
@@ -228,8 +228,7 @@ object-position: 100% center;
 }
 
 #contact {
-    margin: 5% 5% 5% 5%;
-}
+    margin: 0% 5% 5% 5%;
 
 /* 
 ====================
