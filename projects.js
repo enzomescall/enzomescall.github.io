@@ -13,7 +13,7 @@ async function fetchDataFromCSV() {
   return projectsData;
 }
 
-function createProjectElement(title, description, link, linkdesc, image, date) {
+function createProjectElement(title, image, description, date, linkdesc, link) {
   const projectsContainer = document.getElementById('projects');
 
   const projectElement = document.createElement('div');
@@ -40,8 +40,8 @@ function createProjectElement(title, description, link, linkdesc, image, date) {
 
 async function displayProjects() {
   const projectsData = await fetchDataFromCSV();
-  projectsData.forEach(([title, description, link, linkdesc, image, date]) => {
-    createProjectElement(title, description, link, linkdesc, image, date);
+  projectsData.forEach(([title, image, description, date, linkdesc, link]) => {
+    createProjectElement(title, image, description, date, linkdesc, link);
   });
 }
   
