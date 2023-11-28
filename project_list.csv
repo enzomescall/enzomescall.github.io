@@ -1,0 +1,2 @@
+title, descsription,link,linkdesc, image, date
+Class NLP,"Used scikit-learn to implement a bag-of-words model to perform sentiment analysis on Rate My Professors data, training on actual student ratings, to determine which characteristics of a classroom bring positive ratings.",https://github.com/enzomescall/MCM-MNS,Github link,./images/ratemyprof.png,April 2023

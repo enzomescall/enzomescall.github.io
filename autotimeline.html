@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <link rel="shortcut icon" href="./images/favicon.jpg"/>
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <div id="button-shell">
+        <li class="button" onMouseOver = "alterBackground()" onMouseOut = "revertBackground()">
+            <span onclick="transitionToPage('index.html')">Home</span>
+        </li>
+    </div>    
+
+    <div id="background-pattern"></div>  
+    <div id="projects-background-image"></div>
+
+    <main>
+        <section id="projects" data-mouse-down-at="0" data-prev-percentage="0"> </section>
+        
+        <section id="button-track">
+            <button class="slide-button" id="slideLeft" type="button">Slide left</button>
+            <button class="slide-button" id="slideRight" type="button">Slide right</button>
+        </section>
+    </main>
+    
+</html>
+<script src="projects.js"></script> 
