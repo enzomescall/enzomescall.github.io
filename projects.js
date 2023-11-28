@@ -3,7 +3,7 @@ async function fetchDataFromCSV() {
   const response = await fetch('project_list.csv');
   const text = await response.text();
 
-  const projectsData = text.split('\n').map(line => line.split(','));
+  const projectsData = text.split('\n').map(line => line.split(';'));
 
   // Remove the last element if it is an empty string (caused by a newline at the end of the file)
   if (projectsData[projectsData.length - 1].length === 1 && projectsData[projectsData.length - 1][0] === '') {
@@ -31,7 +31,7 @@ function createProjectElement(title, description, link, linkdesc, image, date) {
       </a>
     </div>
     <p>${description}</p>
-    <li><a id="github-link" target="_blank" rel="noopener noreferrer" href="${link}">"${linkdesc}"</a></li>
+    <li><a id="github-link" target="_blank" rel="noopener noreferrer" href="${link}">${linkdesc}</a></li>
     <h3>${date}</h3>
   `;
 
