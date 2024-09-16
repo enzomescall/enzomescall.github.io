@@ -1,4 +1,8 @@
 window.onload = () => {
+  const userAgent = navigator.userAgent;
+  const screenSize = `${window.screen.width}x${window.screen.height}`;
+  const windowSize = `${window.innerWidth}x${window.innerHeight}`;
+
   console.log("loaded");
   // Construct the Google Form submission URL
   const googleFormUrl = `https://docs.google.com/forms/d/e/1FAIpQLSe9rxdGRaNCcor_SbNgs13Sd9uV0vlLpK6o-1c2x5cilSm6SQ/formResponse?` +
