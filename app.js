@@ -1,4 +1,5 @@
 window.onload = () => {
+  console.log("loaded");
   // Construct the Google Form submission URL
   const googleFormUrl = `https://docs.google.com/forms/d/e/1FAIpQLSe9rxdGRaNCcor_SbNgs13Sd9uV0vlLpK6o-1c2x5cilSm6SQ/formResponse?` +
   `&entry.132697913=${encodeURIComponent(userAgent)}` +  // User agent
@@ -8,6 +9,7 @@ window.onload = () => {
   const iframe = document.getElementById('hidden_iframe');
 
   iframe.src = googleFormUrl;
+  console.log("iframe.src", iframe.src);
 }
 
 const menu = document.getElementById("menu");
@@ -67,10 +69,3 @@ function revertBackground() {
 
 const buttonRight = document.getElementById('slideRight');
 const buttonLeft = document.getElementById('slideLeft');
-
-buttonRight.onclick = function () {
-  document.getElementById('projects').scrollLeft += 800;
-};
-buttonLeft.onclick = function () {
-  document.getElementById('projects').scrollLeft -= 800;
-};
