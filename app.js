@@ -1,3 +1,15 @@
+window.onload = () => {
+  // Construct the Google Form submission URL
+  const googleFormUrl = `https://docs.google.com/forms/d/e/1FAIpQLSe9rxdGRaNCcor_SbNgs13Sd9uV0vlLpK6o-1c2x5cilSm6SQ/formResponse?` +
+  `&entry.132697913=${encodeURIComponent(userAgent)}` +  // User agent
+  `&entry.1022950244=${encodeURIComponent(screenSize)}` + // Screen size
+  `&entry.1631154431=${encodeURIComponent(windowSize)}`;  // Window size
+
+  const iframe = document.getElementById('hidden_iframe');
+
+  iframe.src = googleFormUrl;
+}
+
 const menu = document.getElementById("menu");
 
 Array.from(document.getElementsByClassName("menu-item"))
