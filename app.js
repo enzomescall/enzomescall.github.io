@@ -64,8 +64,3 @@ function revertBackground() {
   //background_image.style.backgroundSize = "105vmax";
   //background_image.style.opacity = "0.15";
 }
-
-// scrolling functionality in timeline
-
-const buttonRight = document.getElementById('slideRight');
-const buttonLeft = document.getElementById('slideLeft');
