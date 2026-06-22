@@ -151,7 +151,7 @@ li {
     color: white;
     cursor: pointer;
     display: block;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Ibarra Real Nova', Georgia, serif;
     font-size: clamp(3rem, 8vw, 8rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
@@ -161,7 +161,7 @@ li {
 .menu-name {
     color: white;
     display: block;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Ibarra Real Nova', Georgia, serif;
     font-size: clamp(2rem, 4vw, 4rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
@@ -179,7 +179,7 @@ li {
     color: white;
     cursor: pointer;
     display: block;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Ibarra Real Nova', Georgia, serif;
     font-size: clamp(0.5rem, 4vw, 4rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
@@ -329,7 +329,7 @@ object-position: 100% center;
     cursor: pointer;
     display: block;
     white-space: nowrap;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Ibarra Real Nova', Georgia, serif;
     font-size: clamp(0.5rem, 4vw, 4rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
@@ -353,7 +353,7 @@ object-position: 100% center;
 .slide-button {
     cursor: pointer;
     display: block;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Ibarra Real Nova', Georgia, serif;
     font-size: clamp(5px, 105%, 40px);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
