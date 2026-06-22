@@ -136,7 +136,6 @@ li {
 }
 
 #menu-items:hover~#menu-background-image {
-    background-size: 100vmax;
     opacity: 0.1;
 }
 
